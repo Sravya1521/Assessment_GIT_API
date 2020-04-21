@@ -1,0 +1,18 @@
+<div>
+    <div class="container">
+        <h1>{{UserName}}</h1>
+        <img src="{{UserImage}}">
+    </div>
+    <div class="listOfRepos">
+        <h2>List of Repositories</h2>
+        <ol class="gradient-list" *ngFor="let repo of repoList">
+            <li>{{repo.full_name}}</li>
+        </ol>
+    </div>
+    <div class="listOfFollowers">
+        <h2>List of Followers</h2>
+        <ol class="gradient-list" *ngFor="let follower of followerList">
+            <li>{{follower.login}}</li>
+        </ol>
+    </div>
+</div>
